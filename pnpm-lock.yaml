@@ -7,6 +7,7 @@ specifiers:
   '@remix-run/serve': ^1.0.5
   '@types/react': ^17.0.24
   '@types/react-dom': ^17.0.9
+  esbuild-register: ^3.2.0
   prisma: ^3.5.0
   react: ^17.0.2
   react-dom: ^17.0.2
@@ -25,6 +26,7 @@ devDependencies:
   '@remix-run/dev': 1.0.5
   '@types/react': 17.0.37
   '@types/react-dom': 17.0.11
+  esbuild-register: 3.2.0
   prisma: 3.5.0
   typescript: 4.5.2
 
@@ -875,6 +877,14 @@ packages:
     dev: true
     optional: true
 
+  /esbuild-register/3.2.0:
+    resolution: {integrity: sha512-i1sYwESrRHJz15Cl1u2OgLjBBp/bWtGoDdFXVLL1clsp+pFdqIpRfHIQGkgvQAlAecP5IC/bObYrKCyx/lE50Q==}
+    peerDependencies:
+      esbuild: '>=0.12 <1'
+    dependencies:
+      jsonc-parser: 3.0.0
+    dev: true
+
   /esbuild-sunos-64/0.13.14:
     resolution: {integrity: sha512-mjMrZB76M6FmoiTvj/RGWilrioR7gVwtFBRVugr9qLarXMIU1W/pQx+ieEOtflrW61xo8w1fcxyHsVVGRvoQ0w==}
     cpu: [x64]
@@ -1407,6 +1417,10 @@ packages:
     hasBin: true
     dependencies:
       minimist: 1.2.5
+    dev: true
+
+  /jsonc-parser/3.0.0:
+    resolution: {integrity: sha512-fQzRfAbIBnR0IQvftw9FJveWiHp72Fg20giDrHz6TdfB12UH/uue0D3hm57UB5KgAVuniLMCaS8P1IMj9NR7cA==}
     dev: true
 
   /jsonfile/6.1.0:
